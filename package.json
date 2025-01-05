@@ -7,18 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "cp -r node_modules/cesium/Build/Cesium/* public/cesium"
+    "postinstall": "symlink-dir node_modules/cesium/Build/Cesium public/cesium"
   },
   "dependencies": {
-    "@ducanh2912/next-pwa": "^10.2.9",
-    "@next/bundle-analyzer": "^15.1.3",
-    "cesium": "^1.120.0",
-    "file-loader": "^6.2.0",
-    "next": "14.0.4",
+    "@nextui-org/react": "^2.6.10",
+    "cesium": "^1.124.0",
+    "framer-motion": "^11.15.0",
+    "next": "^14.2.22",
     "react": "^18",
     "react-dom": "^18",
-    "resium": "^1.18.2",
-    "url-loader": "^4.1.1"
+    "resium": "^1.18.3"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -28,6 +26,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "postcss": "^8",
+    "symlink-dir": "^6.0.4",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
