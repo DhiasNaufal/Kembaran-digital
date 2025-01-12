@@ -82,7 +82,7 @@ const SideNavbar = () => {
   };
 
   return (
-    <div className={` h-full overflow-visible `}>
+    <div className={` h-full overflow-visible gap-3`}>
       <Autocomplete
         defaultSelectedKey="yogyakarta"
         onSelectionChange={(value) => {
