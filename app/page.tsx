@@ -37,7 +37,12 @@ export default function Home() {
         <MapCesium />
       </div>
       <div className="inset-0 z-10 p-4">
-        <button onClick={toggleDrawer}>Open</button>
+        <button
+          onClick={toggleDrawer}
+          className="bg-white m-1 py-3 px-5 rounded"
+        >
+          Open
+        </button>
         <div
           className={`fixed top-0 left-0 h-full w-72 p-5 bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
             isOpen ? "translate-x-0" : "-translate-x-full"
